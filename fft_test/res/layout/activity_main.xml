@@ -1,0 +1,99 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginRight="0dp"
+    android:background="#000000"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <com.example.fft_test.DrawColumns
+        android:id="@+id/view1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/textView1"
+        android:layout_marginBottom="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginTop="10dp" />
+
+    <Button
+        android:id="@+id/send_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/play_btn"
+        android:layout_alignBottom="@+id/play_btn"
+        android:layout_marginRight="15dp"
+        android:layout_toLeftOf="@+id/prog_btn"
+        android:text="@string/Connect" />
+
+       <Button
+           android:id="@+id/blue_btn"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignLeft="@+id/prog_btn"
+           android:layout_below="@+id/send_btn"
+           android:layout_marginTop="18dp"
+           android:text="@string/Blue" />
+
+       <Button
+           android:id="@+id/prog_btn"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_above="@+id/blue_btn"
+           android:layout_alignRight="@+id/view1"
+           android:text="@string/Load" />
+
+       <Button
+           android:id="@+id/red_btn"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignBaseline="@+id/green_btn"
+           android:layout_alignBottom="@+id/green_btn"
+           android:layout_toLeftOf="@+id/green_btn"
+           android:text="@string/Red" />
+
+       <Button
+           android:id="@+id/green_btn"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignBaseline="@+id/blue_btn"
+           android:layout_alignBottom="@+id/blue_btn"
+           android:layout_toLeftOf="@+id/blue_btn"
+           android:text="@string/Green" />
+
+       <SeekBar
+           android:id="@+id/seekBar1"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_alignBottom="@+id/blue_btn"
+           android:layout_marginRight="10dp"
+           android:layout_toLeftOf="@+id/red_btn" />
+
+       <TextView
+           android:id="@+id/textView1"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignLeft="@+id/play_btn"
+           android:layout_below="@+id/seekBar1"
+           android:layout_marginTop="14dp"
+           android:maxLines="7"
+           android:minLines="1"
+           android:text="@string/hello_world"
+           android:textColor="#ffffff" />
+
+       <Button
+           android:id="@+id/play_btn"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignParentLeft="true"
+           android:layout_alignParentTop="true"
+           android:layout_marginLeft="3dp"
+           android:layout_marginTop="3dp"
+           android:text="@string/Play" />
+
+</RelativeLayout>

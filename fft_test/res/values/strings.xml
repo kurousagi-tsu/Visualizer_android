@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Pocketduino-NeoPixel</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="Play">Play</string>
+    <string name="Connect">Connect</string>
+    <string name="Load">Load</string>
+    <string name="DisConnect">DisConnect</string>
+    <string name="Stop">Stop</string>
+    <string name="Red">Red</string>
+    <string name="Green">Gren</string>
+    <string name="Blue">Blue</string>
+    <string name="nothing"></string>
+
+</resources>
